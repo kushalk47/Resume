@@ -1,10 +1,10 @@
 import streamlit as st
 
 # Set page configuration
-st.set_page_config(page_title='Kushal Portfolio',layout='wide')
+st.set_page_config(page_title='Kushal Portfolio', layout='wide')
 
 # Layout: Columns for profile image and introduction
-col1,empt_col,col2 = st.columns([1.5,0.2,2.0])
+col1, empt_col, col2 = st.columns([1.5, 0.2, 2.0])
 
 with col1:
     st.image(r"https://raw.githubusercontent.com/kushalk47/Resume/master/photos/image2.jpg", width=600)
@@ -19,7 +19,7 @@ with col2:
     st.info(content)
 
 # Layout: Columns for technical skills and certifications
-col3,emp_col, col4 = st.columns([1.5,0.2,2.0])
+col3, emp_col, col4 = st.columns([1.5, 0.2, 2.0])
 
 with col3:
     st.title("Technical Skills")
@@ -43,11 +43,8 @@ with col4:
     '''
     st.info(content3)
 
-
-
-
 # Layout: Columns for projects
-col7,emp_col,col8 = st.columns([1.5,0.5,1.5])
+col7, emp_col, col8 = st.columns([1.5, 0.5, 1.5])
 
 with col7:
     st.header("Weather Forecast App")
@@ -55,14 +52,14 @@ with col7:
     desc = '''This is a Weather Forecast app that predicts the weather for up to 5 days.'''
     st.write(desc)
     st.write("[Source Code](https://github.com/kushalk47)")
-
-    #st.header("")
+    st.divider()  # Horizontal line separator
 
     st.header("To-Do App")
     st.image(r"https://raw.githubusercontent.com/kushalk47/Resume/master/photos/1.png", width=300)
     desc = '''A simple To-Do application to help avoid distractions.'''
     st.write(desc)
     st.write("[Source Code](https://todoapp47.streamlit.app)")
+    st.divider()  # Horizontal line separator
 
     st.header("Chatbot (ChatGPT API Key)")
     st.image(r"https://raw.githubusercontent.com/kushalk47/Resume/master/photos/9.png", width=300)
@@ -76,6 +73,7 @@ with col8:
     desc = '''Using the Apriori algorithm and K-Means clustering to analyze frequently bought items and cluster customers into different groups.'''
     st.write(desc)
     st.write("[Source Code](https://github.com/kushalk47)")
+    st.divider()  # Horizontal line separator
 
     st.header("Data Analytics (Insurance & UPI)")
     st.image(r"https://raw.githubusercontent.com/kushalk47/Resume/master/photos/market_basket_analysis.jpg", width=300)
