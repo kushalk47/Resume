@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit import form_submit_button
 
+
 st.title("Contact me ")
 
 with st.form(key='email_forms'):
@@ -19,3 +20,10 @@ st.write("[GIT](https://github.com/kushalk47)")
 
 st.header("Gmail")
 st.write("[gmail](https://kushalkantharaju536@gmail.com)")
+
+app = Flask(__name__)
+
+# Load station data
+stations = pd.read_csv("csv2/stations.txt", skiprows=17)
+
+
